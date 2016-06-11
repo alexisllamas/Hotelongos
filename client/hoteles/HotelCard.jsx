@@ -7,8 +7,10 @@ class HotelCard extends React.Component {
     }
     render() {
         return (
-        	<p>{this.props.hotel.name}</p>
-    	)
+        	<div>
+        		<a href={"/hotel/" + this.props.hotel._id}>{this.props.hotel._id}</a> - {this.props.hotel.name}
+        	</div>
+    	);
     }
 }
 
