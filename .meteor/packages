@@ -24,12 +24,22 @@ insecure                # Allow all DB writes from clients (for prototyping)
 kadira:flow-router
 meteortoys:allthings
 ultimatejs:tracker-react
+fortawesome:fontawesome
+
 
 stolinski:stylus-multi
 react-meteor-data
-
-accounts-ui
-accounts-password
 themeteorchef:bert
 
 check
+spiderable
+fastclick
+raix:handlebar-helpers
+aldeed:collection2
+aldeed:autoform
+accounts-ui
+accounts-password
+accounts-facebook
+service-configuration
+zimme:active-route
+gwendall:auth-client-callbacks
