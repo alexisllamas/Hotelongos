@@ -1,0 +1,12 @@
+{
+  "public": {
+  		"ga": { 
+  			"account": "UA-78940603-1"
+		}
+  },
+  "private": {
+      "google": { 
+        "apiKey": "AIzaSyDkI0WtFVwpHtVqK-LlhWh60ZPHHiFeUC8"
+    }
+  }
+}

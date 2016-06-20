@@ -9,8 +9,8 @@ class Header extends React.Component {
     render() {
         return (
         	<header>
-				<h2>Hotelongos</h2>
-				<Nav active={this.props.active} />
+				<a href="/"><h2>Hotelongos</h2></a>
+				<Nav />
 			</header>
     	);
     }

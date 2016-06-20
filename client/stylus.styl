@@ -28,6 +28,7 @@ $large = 960px
 $wide = 1200px
 
 // Colors
+primary = #009688
 black = #222
 grey = #D8D8D8
 light-grey = #EEE
@@ -76,11 +77,97 @@ html
 body
     background light-grey
     padding: 70px 0 150px
-    font-family: 'Open Sans', sans-serif
+
+p
+    color #333 
+
+.page-title
+    text-align center
+    margin-bottom 30px 
+
+.billboard
+    background dark-purp
+    color #FFF
+    font-size 2em
+    text-align center
+    padding 60px 
+    h2
+        margin 0
+
+.main-layout
+    lost-center 90%
+    margin-top 20px 
+    +above($large)
+        lost-center 70%
+        margin-top 40px
+    
+.new-recipe
+    margin-bottom 20px 
+
+.new-recipe-container
+    position relative
+    background #FFF
+    padding 20px 
+    margin-bottom 20px 
+    shadow-level(2) 
+    .fa-close
+        position absolute
+        top 0
+        right 0
+        padding 20px   
+    label
+        display block
+        margin-bottom 10px 
+    textarea, input
+        width 100% 
+
+input, select, textarea
+    color purp
+    background #FFF
+    border solid 2px light-grey
+    border-radius 2px
+    font-weight 800
+    width 100% 
+    padding 6px 10px
+    margin-bottom 10px  
+    &.static-input
+        border none
+        background transparent
+
+.list-group
+    list-style none
+    padding 0
+    
+.panel-body
+    .form-group
+        lost-column 1/2 
+        
+.autoform-remove-item.btn
+    background light-grey
+    box-shadow none
+    border none
+    border-radius 50%
+    font-size 1em
+    height: 25px
+    width: 25px
+    text-align: center
+    display: block
+    padding: 0
+
+.autoform-add-item.btn
+    width 100%
+    border-radius 0
+    border none
+    box-shadow none
+    background light-grey
+     
+
+.autoform-remove-item-wrap
+    vertical-align middle 
 
 header
     color #FFF 
-    background: purp
+    background: primary
     padding 20px 5%
     fixed top left
     width 100%
@@ -93,286 +180,93 @@ header
         font-weight 100 
         font-size 1.6em 
         float left
+    a 
+        color: #FFF
+        text-decoration: none
+        line-height: 36px
+        font-size: 1.2em
+        display: inline-block
+        border-bottom 4px solid transparent
+        trans() 
+        + a
+            margin-left: 30px
+        &:hover
+            border-color teal 
     nav
         float right
-        a 
-            color: #FFF
-            text-decoration: none
-            line-height: 36px
-            font-size: 1.2em
-            display: inline-block
-            border-bottom 4px solid transparent
-            trans() 
-            + a
-                margin-left: 30px
-            &:hover
-                border-color teal 
+            
 
-
-p
-    color #333 
-
-.page-title
-    text-transform uppercase
-    font-weight 800 
-    margin-bottom 30px 
-
-.main-layout
-    lost-center 90%
-    margin-top 20px 
-    +above($large)
-        lost-center 70%
-        margin-top 40px
-    
-.btn, button
-    display inline-block
-    cursor pointer
-    background purp
-    color #FFF
-    text-decoration none
-    text-transform uppercase
-    padding 5px 15px
-    border solid 3px purp
-    border-radius 2px
-    font-weight 800
+.hotel-card
+    background #FFF 
+    padding 0 20px 20px
+    margin-bottom 20px
+    position relative 
+    z-index 1
     shadow-level(1)
     trans()
-    &:hover
-        background @background - 20
-        border-color @background
-        shadow-level(2)
-    &.btn-primary
-        background teal
-        border-color teal
-        color dark-purp
-        &:hover
-            background @background - 40
-            border-color @background
-    &.btn-deny
-        background red
-        border solid 3px @background
-        &:hover
-            background @background - 20
-            border-color @background
-    &.btn-text
-        color purp
-        background transparent
-        border solid 2px purp
-        shadow-level(0)
-        &:hover
-            background teal
-            border-color @background
-            shadow-level(1)
-    &.btn-text-dark
-        color #FFF
-        background transparent
-        border solid 2px #FFF
-        shadow-level(0)
-        &:hover
-            background #FFF
-            color dark-purp 
-            border-color @background
-            shadow-level(1)
-    &.btn-confirmation
-        color black
-        background green
-        border solid 2px @background
-        &:hover
-            background @background - 20
-            border-color dark-purp
-    &.btn-cancel
-        color #FFF
-        background transparent
-        border solid 2px #FFF 
-        opacity 0.4
-        shadow-level(-1)
-        &:hover
-            background red
-            color #FFF
-            opacity 1
-            shadow-level(2)
-            border-color @background
-
-input, select, textarea
-    color purp
-    background #FFF
-    border solid 2px light-grey
-    border-radius 2px
-    font-weight 800
-    padding 6px 10px
-    margin-bottom 10px  
-
-input::-webkit-input-placeholder
-    color: #ddd
-input:-moz-placeholder
-    color: #ddd
-input::-moz-placeholder
-    color: #ddd
-input:-ms-input-placeholder
-    color: #ddd
-
-.new-resolution
-    transition all 0.3s cubic-bezier(0.86, 0, 0.07, 1)
-    shadow-level(3)
-    &:hover
-        shadow-level(5)
-    label
-        background dark-purp
-        text-transform uppercase
-        font-weight 800
-        color #FFF
-        font-size 1.2em 
-        padding 10px 
+    h3
+        font-size: 2em;
+        opacity: 0.3;
+        border-bottom: rgba(0,0,0, 0.3) solid 3px
+        margin-top 0
+        margin-bottom 10px 
+    .fa-trash, .fa-pencil
+        opacity 0.3
+        cursor pointer
+        position absolute
+        top 0
+        right 0
+        font-size 1.6em  
         display block
-        text-align center
-        letter-spacing 2px
-    input
-        width 100% 
-        margin 0
-        font-size 2em
-        font-weight 800
-        color #333
-        border none
-        padding 30px
+        padding 20px 
+        color black
+        trans()
+        &:hover
+            color red 
+            opacity 0.6
+    &:hover 
+        shadow-level(3)
+        // animation card 0.6s ease 1 forwards
 
-.resolutions
+@keyframes card
+    0%
+        transform translate3d(0, 0, 0)
+    50%
+        transform translate3d(0, -135px, 0)
+    51%
+        z-index 10
+        transform translate3d(0, -135px, 0)
+    100%
+        z-index 10
+        transform translate3d(0, 0, 0)
+
+            
+.menu-item
+    @extend .hotel-card
+    
+.shopping-list
+    @extend .hotel-card
+    padding 50px 5%
     list-style none
-    padding 0
-    margin 40px 0 
-    lost-center 700px
     li
         font-size 2em 
-        margin-bottom 8px 
-        trans()
-        input
-            margin-right 10px 
-        &.checked
-            color #CCC 
-        button
-            padding 10px
-            margin-left 40px  
-            line-height 0.5 
-            float right
-    
-.panel-body
-    .form-group
-        lost-column 1/2 
+        padding 20px
+        border-bottom 1px solid light-grey
+        border-top 1px solid light-grey
+        & + li 
+            border-top none
+            
 
-.side-nav
-    fixed bottom left
-    height 100px
-    width 100%
-    overflow hidden 
-    background dark-purp
-    color #FFF
-    z-index: z.header
-    shadow-level(2)
-    ul
-        margin 0
-        padding 0
-        display flex
-        justify-content space-between 
-        list-style none
-    a
-        color #FFF
-        text-decoration none
-        padding 20px 20px
-        display block
-        text-align center
-        trans()
-        &:hover, &.active
-            background purp 
-    i
-        display block
-        font-size 2em
-        margin-bottom 10px 
-    +above($med)
-        height 100%
-        z-index: z.mid
-        padding 120px 0
-        fixed top left
-        width $side-nav
-        ul 
-            display block
-        shadow-level(-1)
-        a
-            padding 20px 10px
-            &:hover, &.active
-                border-left 4px solid teal
-    +above($large)
-        width $side-nav-large
-        a
-            padding 20px 20px
-            &:hover, &.active
-                border-left 10px solid teal
-        
-.completed
-    color #FFF
-    background teal
-    border-radius 5px
-    padding 5px
-    margin-left 20px 
-    animation complete 0.6s ease
-    font-size 0.6em 
-    
 #login-dropdown-list
     right -1px
     left auto  
     
 #login-sign-in-link, #login-name-link
     margin-left: 30px
-
-
-@keyframes complete
-    0%
-        opacity 0
-        transform translate3d(0,-30px,0)
-    100%
-        opacity 1 
-        transform translate3d(0, 0,0)
-
-.resolutionLoad-enter
-    animation: slideIn 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
-
-.resolutionLoad-leave 
-    animation: slideOut 0.4s cubic-bezier(0.165, 0.84, 0.44, 1)
-
-@keyframes slideIn
-    0%
-        opacity 0
-        transform translate3d(-50px, 0, 0)
-    100%
-        opacity 1
-        transform translate3d(0, 0, 0)
-
-@keyframes slideOut
-    0%
-        opacity 1
-        transform translate3d(0, 0, 0)
-    100%
-        opacity 0
-        transform translate3d(50px, 0, 0)
-
-@keyframes slideUp
-    0%
-        opacity 0
-        transform translate3d(0, 60px, 0)
-    100%
-        opacity 1
-        transform translate3d(0, 0, 0)
-        
-.route-enter, .route-appear
-    opacity: 0
-    animation: slideIn 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
-
-.route-leave 
-    animation: slideOut 0.4s cubic-bezier(0.165, 0.84, 0.44, 1)
-    opacity: 1.0
     
-.route-appear
-    opacity: 0
-    animation: slideUp 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)
-    
-.prueba
-    :hover
-        border-color teal 
+.center
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);

@@ -1,0 +1,157 @@
+[
+	{
+		"name" : "Manzanillo", 
+		"country": "México"
+  }, {
+		"name": "Colima", 
+		"country": "México"
+  }, {
+		"name": "Tecomán", 
+		"country": "México"
+  }, {
+		"name": "Sídney", 
+		"country": "Australia"
+  }, {
+		"name": "Nueva York", 
+		"country": "Estados Unidos"
+  }, {
+		"name": "Los Ángeles", 
+		"country": "Estados Unidos"
+  }, {
+		"name": "San Diego", 
+		"country": "Estados Unidos"
+  }, {
+		"name": "Monterrey", 
+		"country": "México"
+  }, {
+		"name": "Aguascalientes", 
+		"country": "Méxio"
+  }, {
+		"name": "Guadalajara", 
+		"country": "México"
+  }, {
+		"name": "San Francisco", 
+		"country": "Estados Unidos"
+  }, {
+		"name": "Tokio", 
+		"country": "Japón"
+  }, {
+		"name": "Cancún", 
+		"country": "México"
+  }, {
+		"name": "París", 
+		"country": "Francia"
+  }, {
+		"name": "Venecia", 
+		"country": "España"
+  }, {
+		"name": "Sevilla", 
+		"country": "España"
+  }, {
+		"name": "Lhasa", 
+		"country": "China"
+  }, {
+		"name": "Río de Janeiro", 
+		"country": "Brasil"
+  }, {
+		"name": "Londres", 
+		"country": "Inglaterra"
+  }, {
+		"name": "Marrakech", 
+		"country": "Marruecos"
+  }, {
+		"name": "Petra", 
+		"country": "Jordania"
+  }, {
+		"name": "Roma", 
+		"country": "Italia"
+  }, {
+		"name": "Benarés", 
+		"country": "India"
+  }, {
+		"name": "Florencia", 
+		"country": "Italia"
+  }, {
+		"name": "La Habana", 
+		"country": "Cuba"
+  }, {
+		"name": "Kioto", 
+		"country": "Japón"
+  }, {
+		"name": "Jerusalén", 
+		"country": "Israel"
+  }, {
+		"name": "Beijing", 
+		"country": "China"
+  }, {
+		"name": "Lalibela", 
+		"country": "Etiopía"
+  }, {
+		"name": "Granada", 
+		"country": "España"
+  }, {
+		"name": "Atenas", 
+		"country": "Grecia"
+  }, {
+		"name": "Bagan", 
+		"country": "Birmania"
+  }, {
+		"name": "Katmandú", 
+		"country": "Nepal"
+  }, {
+		"name": "Ciudad del Vaticano", 
+		"country": "Roma"
+  }, {
+		"name": "Lisboa", 
+		"country": "Portugal"
+  }, {
+		"name": "Estambul", 
+		"country": "Turquía"
+  }, {
+		"name": "Hoi An", 
+		"country": "Vietnam"
+  }, {
+		"name": "Ámsterdam", 
+		"country": "Países Bajos"
+  }, {
+		"name": "Lúxor", 
+		"country": "Egipto"
+  }, {
+		"name": "Berlín", 
+		"country": "Alemania"
+  }, {
+		"name": "Jaipur", 
+		"country": "India"
+  }, {
+		"name": "Lyon", 
+		"country": "Francia"
+  }, {
+		"name": "Oia", 
+		"country": "Grecia"
+  }, {
+		"name": "Viena", 
+		"country": "Austria"
+  }, {
+		"name": "Cuzco", 
+		"country": "Perú"
+  }, {
+		"name": "Cartagena", 
+		"country": "Colombia"
+  }, {
+		"name": "Ciudad de México", 
+		"country": "México"
+  }, {
+		"name": "Singapur", 
+		"country": "Singapur"
+  }, {
+		"name": "Las Vegas", 
+		"country": "Estados Unidos"
+  }, {
+		"name": "Samarcanda", 
+		"country": "Uzbekistán"
+  }, {
+		"name": "Buenos Aires", 
+		"country": "Argentina"
+	}
+]
+

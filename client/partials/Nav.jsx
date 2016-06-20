@@ -1,18 +1,17 @@
 import React from 'react';
+import AccountsUI from '../components/AccountsUI';
 
 class Nav extends React.Component {
     constructor(props) {
         super(props);
         this.displayName = 'Nav';
     }
-    isActive(active) {
-    	return active === this.props.active ? "active" : null;
-    }
     render() {
         return (
         	<nav>
-				<a className={this.isActive("main")} href="/">Inicio</a>
-				<a className={this.isActive("about")} href="/about">Sobre Nosotros</a>
+				<a href="/">Inicio</a>
+				<a href="/about">Sobre Nosotros</a>
+                <AccountsUI />
 			</nav>
     	);
     }
