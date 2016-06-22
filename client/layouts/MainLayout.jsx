@@ -5,6 +5,7 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 
 import AccountsUI from '../components/AccountsUI';
+import Header from '../partials/Header';
 
 const muiTheme = getMuiTheme({
   palette: {
@@ -20,18 +21,13 @@ injectTapEventPlugin();
 
 export const MainLayout = ({content}) => (
 	<MuiThemeProvider muiTheme={muiTheme}>
-	<div className="main-layout">
-		<header>
-				<a href="/"><h2>Hotelongos</h2></a>
-				<nav>
-					<a href="/">Inicio</a>
-					<a href="/about">Sobre Nosotros</a>
-	                <AccountsUI />
-				</nav>
-		</header>
-		<main>
-			{content}
-		</main>		
+	<div>
+		<Header />
+		<div className="main-layout">
+			<main>
+				{content}
+			</main>		
+		</div>
 	</div>
 	</MuiThemeProvider>
 );

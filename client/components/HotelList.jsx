@@ -5,6 +5,8 @@ import { sumDays } from '../helpers';
 import FilterItems from './FilterItems';
 import DataPickers from './DataPickers';
 import SearchCity from '../containers/SearchCity';
+import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
+
 
 const changeInputSearch = (event) => {
     let search = event.target.value;
@@ -85,10 +87,14 @@ const HotelList = ({data}) => {
 
 	return (
 	<div>
-		<SearchCity />
-		<DataPickers 
-			props={{dateStart: props.dateStart, dateEnd: props.dateEnd}}
-		/>
+		<Card>
+			<CardText>
+				<SearchCity />
+				<DataPickers 
+					props={{dateStart: props.dateStart, dateEnd: props.dateEnd}}
+				/>
+			</CardText>
+		</Card>
 		<FilterItems 
 			props={{nameQuery: nameQuery, changeInputSearch: changeInputSearch}}
 		/>

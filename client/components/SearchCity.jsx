@@ -16,6 +16,7 @@ const SearchCity = ({cities}) => (
     dataSource={cities}
     maxSearchResults={10}
     onNewRequest={onSelectCity}
+    fullWidth={true}
     style={{}}
   />
 );

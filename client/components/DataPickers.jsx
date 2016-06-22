@@ -12,6 +12,13 @@ const DataPickers = ({props}) => {
 	      FlowRouter.setQueryParams({dateEnd: sumDays(date, 1)});
 	  }
 	};
+	const leftStyle = {
+		display: "inline-block",
+	}
+	const rightStyle = {
+		display: "inline-block",
+		float: "right",
+	}
 	return (
 		<div>
 			<DatePicker hintText="Fecha inicial"
@@ -20,6 +27,7 @@ const DataPickers = ({props}) => {
 		    minDate={new Date()}
 		    floatingLabelText="Llegada"
 		    autoOk={true}
+		    style={leftStyle}
 			/>
 			<DatePicker hintText="Fecha final"
 		    value={props.dateEnd}
@@ -28,6 +36,7 @@ const DataPickers = ({props}) => {
 		    minDate={sumDays(new Date(props.dateStart))}
 		    maxDate={sumDays(new Date(props.dateStart), 30)}
 		    autoOk={true}
+		    style={rightStyle}
 			/>
 		</div>
 	)

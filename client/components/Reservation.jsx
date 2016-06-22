@@ -64,49 +64,36 @@ class Reservation extends React.Component {
       const {finished, stepIndex} = this.state;
 	    const contentStyle = {margin: '0 16px'};
 	    return (
-	    	<div>
-		    	<Card>
-		    		<CardTitle style={{textAlign: "center"}}title="Reservación" />
-		    		<CardText>
-		    			<DataPickers props={{dateStart: this.props.dateStart, dateEnd: this.props.dateEnd}} />
-						</CardText>
-					</Card>
-					<br />
-		    	<Card>
-			    	<CardText>
-				      <div style={{width: '100%', maxWidth: 700, margin: 'auto'}}>
-				        <Stepper activeStep={stepIndex}>
-				          <Step>
-				            <StepLabel>Selecciona el hotel</StepLabel>
-				          </Step>
-				          <Step>
-				            <StepLabel>Selecciona las habitaciones</StepLabel>
-				          </Step>
-				          <Step>
-				            <StepLabel icon={<CreditCardIcon />}>Elige tu método de pago</StepLabel>
-				          </Step>
-				        </Stepper>
-				        <div style={contentStyle}>
-									<div>
-			              {this.getStepContent(stepIndex, this.props.hotel)}
-			              <div style={{marginTop: 12}}>
-			                <FlatButton
-			                  label="Atrás"
-			                  disabled={stepIndex === 0}
-			                  onTouchTap={this.handlePrev.bind(this)}
-			                />
-			                <RaisedButton
-			                  label={stepIndex === 2 ? 'Reservar' : 'Siguiente'}
-			                  primary={true}
-			                  onTouchTap={this.handleNext.bind(this)}
-			                />
-			              </div>
-									</div>
-				        </div>
-				      </div>
-			    	</CardText>
-		    	</Card>
-	    	</div>
+	      <div style={{width: '100%', maxWidth: 700, margin: 'auto'}}>
+	        <Stepper activeStep={stepIndex}>
+	          <Step>
+	            <StepLabel>Selecciona el hotel</StepLabel>
+	          </Step>
+	          <Step>
+	            <StepLabel>Selecciona las habitaciones</StepLabel>
+	          </Step>
+	          <Step>
+	            <StepLabel icon={<CreditCardIcon />}>Elige tu método de pago</StepLabel>
+	          </Step>
+	        </Stepper>
+		        <div style={contentStyle}>
+							<div>
+	              {this.getStepContent(stepIndex, this.props.hotel)}
+	              <div style={{marginTop: 12}}>
+	                <FlatButton
+	                  label="Atrás"
+	                  disabled={stepIndex === 0}
+	                  onTouchTap={this.handlePrev.bind(this)}
+	                />
+	                <RaisedButton
+	                  label={stepIndex === 2 ? 'Reservar' : 'Siguiente'}
+	                  primary={true}
+	                  onTouchTap={this.handleNext.bind(this)}
+	                />
+	              </div>
+							</div>
+		        </div>
+	      </div>
       );
     }
 }
